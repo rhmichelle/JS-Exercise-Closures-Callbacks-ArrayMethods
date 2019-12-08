@@ -90,6 +90,18 @@ function processLastItem(/* CODE HERE */) {
   /* CODE HERE */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * ### Challenge `processSum`
  * 
@@ -110,6 +122,18 @@ function processLastItem(/* CODE HERE */) {
 function processSum(/* CODE HERE */) {
   /* CODE HERE */
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * ### Challenge `processProduct`
@@ -132,6 +156,20 @@ function processSum(/* CODE HERE */) {
 function processProduct(/* CODE HERE */) {
   /* CODE HERE */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * ### Challenge `processContains`
@@ -157,6 +195,23 @@ function processContains(/* CODE HERE */) {
   /* CODE HERE */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * ### Challenge `processDuplicateFree`
  * THIS IS A STRETCH PROBLEM! ATTEMPT ONLY AFTER COMPLETING ALL NON-STRETCH CHALLENGES!
@@ -180,6 +235,19 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
   /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
 
@@ -202,6 +270,19 @@ function getFullNames(/* CODE HERE */) {
   /* CODE HERE */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * ### Challenge `firstNamesAllCaps`
  * 
@@ -217,6 +298,20 @@ function getFullNames(/* CODE HERE */) {
 function firstNamesAllCaps(/* CODE HERE */) {
   /* CODE HERE */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * ### Challenge `getRunnersByTShirtSize`
@@ -235,6 +330,18 @@ function getRunnersByTShirtSize(/* CODE HERE */) {
   /* CODE HERE */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * ### Challenge `tallyUpDonations`
  * 
@@ -248,6 +355,33 @@ function getRunnersByTShirtSize(/* CODE HERE */) {
 function tallyUpDonations(/* CODE HERE */) {
   /* CODE HERE */
 }
+
+const reduceCallback = function(sum, numbers) {
+  return sum + numbers.donations;
+};
+
+let tally = runners.reduce(reduceCallback, 0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /////////////// CLOSURES ///////////////
 /////////////// CLOSURES ///////////////
@@ -274,6 +408,22 @@ function counterMaker() {
   // BROKEN CODE ENDS
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * ### Challenge `counterMakerWithLimit`
  * 
@@ -297,6 +447,22 @@ function counterMaker() {
 function counterMakerWithLimit(/* CODE HERE */) {
   /* CODE HERE */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /////////////// END OF CHALLENGE ///////////////
 /////////////// END OF CHALLENGE ///////////////
