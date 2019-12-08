@@ -357,6 +357,21 @@ function tallyUpDonations(runners) {
   }, 0);
 }
 
+
+        // ****Personal Notes****
+// function tallyUpDonations(runners) {
+
+//                                           var reduceCallback = function(sum, numbers) {
+//                                             return sum += numbers.donation;
+//                                           }
+
+
+//   runners.reduce(reduceCallback, 0) {
+//     return //returns result to tallyUpDonations: main function
+//   }
+
+// }
+
 // const reduceCallback = function(sum, numbers) {
 //   return sum + numbers.donations;
 // };
@@ -364,7 +379,7 @@ function tallyUpDonations(runners) {
 // let tally = runners.reduce(function(sum, numbers) {
 //   return sum + numbers.donations;
 // }, 0);
-
+          // ****End Person Notes****
 
 
 
