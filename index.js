@@ -324,13 +324,23 @@ function firstNamesAllCaps(/* CODE HERE */) {
  * @returns an array containing only the runners that use the given `tShirtSize`.
  * The runners in the array appear in the same order they appear in the `runners` array.
 */
-function getRunnersByTShirtSize(/* CODE HERE */) {
+function getRunnersByTShirtSize(runners, tShirtSize) {
   /* CODE HERE */
+    return runners.filter(function(runners, tShirtSize) {
+    return runners.shirt_size === tShirtSize;
+  },)
+
 }
 
 
 
+// const isTSize = function(runners, size) {
+//   return runners.shirt_size === size;
+// };
 
+// runners.filter(function(runners, tShirtSize) {
+//   return runners.shirt_size === tShirtSize;
+// },)
 
 
 
