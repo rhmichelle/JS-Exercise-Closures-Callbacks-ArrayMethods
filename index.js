@@ -28,6 +28,15 @@ function processFirstItem(stringList, callback) {
 /////////////// CALLBACKS AND HIGHER-ORDER FUNCTIONS ///////////////
 /////////////// CALLBACKS AND HIGHER-ORDER FUNCTIONS ///////////////
 
+processFirstItem(stringList, function(string) {
+  return string;
+}); 
+
+
+
+
+
+
 /**
  * ### Challenge `processLength`
  * 
@@ -51,6 +60,17 @@ function processFirstItem(stringList, callback) {
 function processLength(/* CODE HERE */) {
   /* CODE HERE */
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * ### Challenge `processLastItem`
