@@ -28,9 +28,7 @@ function processFirstItem(stringList, callback) {
 /////////////// CALLBACKS AND HIGHER-ORDER FUNCTIONS ///////////////
 /////////////// CALLBACKS AND HIGHER-ORDER FUNCTIONS ///////////////
 
-processFirstItem(stringList, function(string) {
-  return string;
-}); 
+
 
 
 
@@ -352,15 +350,21 @@ function getRunnersByTShirtSize(/* CODE HERE */) {
  * @param runners array of runners like the one inside the /data/runners.js file.
  * @returns a number which is the sum of the donations by all runners.
 */
-function tallyUpDonations(/* CODE HERE */) {
-  /* CODE HERE */
+
+function tallyUpDonations(runners) {
+    return runners.reduce(function(sum, numbers) {
+    return sum+=numbers.donation;
+  }, 0);
 }
 
-const reduceCallback = function(sum, numbers) {
-  return sum + numbers.donations;
-};
+// const reduceCallback = function(sum, numbers) {
+//   return sum + numbers.donations;
+// };
 
-let tally = runners.reduce(reduceCallback, 0);
+// let tally = runners.reduce(function(sum, numbers) {
+//   return sum + numbers.donations;
+// }, 0);
+
 
 
 
