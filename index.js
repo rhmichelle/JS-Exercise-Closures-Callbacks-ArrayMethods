@@ -121,7 +121,10 @@ function processLastItem(stringList, callback) {
 */
 function processSum(numberList, callback) {
   /* CODE HERE */
-  numberList.reduce
+  return numberList.reduce(function(acc, numbers) {
+    var sum = acc + numbers;
+  }, 0);
+  return callback(sum);
 }
 
 
@@ -195,10 +198,10 @@ function processProduct(num1, num2, callback) {
  * "lady gaga" and `['foo', 'bar']` and `(bool) => bool ? 'nice!' : 'sad'`,
  * should return "sad".
 */
-function processContains(/* CODE HERE */) {
+function processContains(item, list, callback) {
   /* CODE HERE */
+  return (callback(list.includes(item)));
 }
-
 
 
 
@@ -385,7 +388,7 @@ function tallyUpDonations(runners) {
 // let tally = runners.reduce(function(sum, numbers) {
 //   return sum + numbers.donations;
 // }, 0);
-          // ****End Person Notes****
+          // ****End Personal Notes****
 
 
 
