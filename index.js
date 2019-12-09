@@ -293,8 +293,15 @@ function getFullNames(/* CODE HERE */) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
-function firstNamesAllCaps(/* CODE HERE */) {
+// let get1stName = function (runners) {
+//   return runners.first_name.toUpperCase();
+// }
+
+function firstNamesAllCaps(runners) {
   /* CODE HERE */
+  return runners.map(function (runners) {
+    return runners.first_name.toUpperCase();
+  });
 }
 
 
