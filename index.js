@@ -264,8 +264,9 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
  * @returns an array with all the runners' full names in the following format: "Smith, John".
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
-function getFullNames(/* CODE HERE */) {
+function getFullNames(runners) {
   /* CODE HERE */
+
 }
 
 
@@ -293,9 +294,6 @@ function getFullNames(/* CODE HERE */) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
-// let get1stName = function (runners) {
-//   return runners.first_name.toUpperCase();
-// }
 
 function firstNamesAllCaps(runners) {
   /* CODE HERE */
@@ -422,10 +420,11 @@ function tallyUpDonations(runners) {
 */
 function counterMaker() {
   // BROKEN CODE STARTS
-  const count = 0;
-  function counter() {
-    ++count
+  var count = 0;
+  var counter = function counter() {
+    return count++;
   }
+  return counter;
   // BROKEN CODE ENDS
 }
 
