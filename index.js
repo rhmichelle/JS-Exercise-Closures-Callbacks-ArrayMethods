@@ -84,8 +84,10 @@ function processLength(list, callback) {
  * Invoking `processLastItem` passing `['foo', 'bar']` and `(str) => str + str`,
  * should return 'barbar'.
 */
-function processLastItem(/* CODE HERE */) {
+function processLastItem(stringList, callback) {
   /* CODE HERE */
+  var lastItem = (stringList.length - 1);
+  return callback(stringList[lastItem]);
 }
 
 
@@ -117,8 +119,9 @@ function processLastItem(/* CODE HERE */) {
  * [2] Invoking `processSum` passing `[]` and `(num) => num + 1000`,
  * should return 1000.
 */
-function processSum(/* CODE HERE */) {
+function processSum(numberList, callback) {
   /* CODE HERE */
+  numberList.reduce
 }
 
 
@@ -151,9 +154,7 @@ function processSum(/* CODE HERE */) {
  * [2] Invoking `processProduct` passing 25 and 0 and `(num) => num + 1000`,
  * should return 1000.
 */
-// let big = function(product) {
-//   return product + " is a big number!"
-// }
+
 
 function processProduct(num1, num2, callback) {
     var product = num1 * num2;
