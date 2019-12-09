@@ -121,10 +121,7 @@ function processLastItem(stringList, callback) {
 */
 function processSum(numberList, callback) {
   /* CODE HERE */
-  return numberList.reduce(function(acc, numbers) {
-    var sum = acc + numbers;
-  }, 0);
-  return callback(sum);
+  return callback(numberList.reduce((acc, cur) => acc + cur, 0));
 }
 
 
@@ -163,14 +160,6 @@ function processProduct(num1, num2, callback) {
     var product = num1 * num2;
     return callback(product);
     }
-  
-
-    /* CODE HERE */
-  
-
-
-
-
 
 
 
@@ -275,7 +264,10 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
 */
 function getFullNames(runners) {
   /* CODE HERE */
-
+  let runArr = [];
+  runners.forEach((runners) =>
+      runArr.push( `${runners.last_name}, ${runners.first_name}` ));
+  return runArr;
 }
 
 
